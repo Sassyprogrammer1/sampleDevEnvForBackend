@@ -6,6 +6,7 @@ In order to deploy this github repo to the GCP cloud as a serverless
 container A.K.A (cloud run) we need to follow the following steps:
 Configure the gcloud cli
 
+# Configure the gcloud cli
 We need to first confiure the gcloud cli with our local sytem In or to 
 configure the gcloud cli follow the following steps. a. First we need to 
 install gcloud cli on our machine. To install gcloud please follow the 
@@ -18,6 +19,7 @@ your project gcloud config set project PROJECT_ID replace PROJECT_ID with
 your projectId.
 Create a service account
 
+# Create a service account
 We need to have a service account in our gcp project so that it can act as 
 a deployment agent to deploy this github repo as a serverless container a. 
 Run the following command to create a service account. gcloud iam 
@@ -25,6 +27,7 @@ service-accounts create service-account-name remove the
 service-account-name with the name you want to give.
 Grant required Iam policies to your service account
 
+# Grant required Iam policies to your service account
 We need to have enough priviliges on our account to grant Iam policies to 
 our service account. a. Run the following command to give storage access 
 to the service account gcloud projects add-iam-policy-binding 
@@ -37,12 +40,14 @@ your-project-Id --member
 --role "roles/run.admin"
 Configure you local docker instance with GCP artifact repo
 
+# Configure you local docker instance with GCP artifact repo
 We need to give access to our local docker instance to build and push the 
 docker image to the GCP artifact repo. a. gcloud auth configure-docker 
 enter-your-registry-domain-here replace enter-your-registry-domain-here 
 with your gcp artifact repo domain.
 Build and deploy
 
+# Build and deploy
 We can now build this repo as a docker image, tag it, and deploy it as gcp 
 cloud run instance a. Run the following command to build, tag and deploy 
 this application repo as a docker image. sh deploy_docker_dev.sh
