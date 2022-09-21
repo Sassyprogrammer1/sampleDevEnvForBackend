@@ -69,6 +69,8 @@ a. build your application repo as a docker image for the linux/amd64 base
 
 On mac m1 docker image built with simple build command does not spin up a container to the cloud successfully
 
+enter the following commands in the cli
+
 # build the docker image
 `docker buildx build --platform linux/amd64 -t example-data .`
 
