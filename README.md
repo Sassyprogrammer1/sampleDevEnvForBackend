@@ -1,6 +1,6 @@
-# A cost effective deployment solution for containerized applications that costs below 10$
-
 # sampleDevEnvForBackend
+A cost effective deployment solution for containerized applications that costs below 10$
+
 This repo contains the instructions to quickly bootstrap a dev environment for your applications backend.
 Deployment to GCP guide
 
