@@ -16,7 +16,7 @@ a. First we need to install gcloud cli on our machine. To install gcloud please 
 steps mentioned in this link 
 https://cloud.google.com/sdk/docs/initializing 
 
-b. Once we have a gcloud installed we can run the following command to login to our gcp account 
+b. Once we have gcloud installed we can run the following command to login to our gcp account 
 through gcloud cli 
 
 `gcloud auth login` 
@@ -61,7 +61,7 @@ a. `gcloud auth configure-docker enter-your-registry-domain-here`
 replace enter-your-registry-domain-here with your gcp artifact repo domain.
 
 # Build and deploy
-We can now build this repo as a docker image, tag it, and deploy it as gcp 
+Build your application as a docker image, tag it, and deploy it as gcp 
 cloud run instance a. Run the following command to build, tag and deploy 
 this application repo as a docker image. 
 
